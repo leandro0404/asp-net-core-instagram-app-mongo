@@ -1,0 +1,30 @@
+﻿/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fafafa;
+    font: 14px Arial, Helvetica, sans-serif;
+    -webkit-font-smothing: antialiased !important;
+}
+
+header#main-header {
+    background: #fff;
+    height: 72px;
+    border-bottom: 1px solid #DDD;
+}
+
+    header#main-header .header-content {
+        width: 100%;
+        max-width: 980px;
+        margin: 0 auto;
+        height: 72px;
+        padding: 0 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }

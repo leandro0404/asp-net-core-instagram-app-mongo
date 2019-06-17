@@ -1,0 +1,40 @@
+﻿@model Post
+
+@section Styles  {
+    <link rel="stylesheet" href="~/css/new.css" />
+}
+
+
+<form asp-action="New" id="new-post" method="post" enctype="multipart/form-data">
+
+    <input type="file" #fileInput
+           name="image"
+           asp-for="Image"
+            />
+
+    <input type="text"
+           id="author"
+           name="author"
+           placeholder="Autor do post"
+           asp-for="Author" />
+
+    <input type="text"
+           id="place"
+           name="place"
+           placeholder="Local do post"
+           asp-for="Place" />
+
+    <input type="text"
+           id="description"
+           name="description"
+           placeholder="Descrição do post"
+           asp-for="Description" />
+
+    <input type="text"
+           id="hashtags"
+           name="hashtags"
+           placeholder="Hashtags do post"
+           asp-for="HashTags" />
+
+    <button type="submit">Enviar</button>
+</form>

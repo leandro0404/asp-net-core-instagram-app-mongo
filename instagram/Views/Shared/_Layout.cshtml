@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - instagram</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+    @RenderSection("Styles", required: false)
+</head>
+<body>
+    <header id="main-header">
+        <div class="header-content">
+            <a asp-controller="Home" asp-action="Feed">
+                <img src="/assets/logo.svg" />
+            </a>
+            <a asp-controller="Home" asp-action="New">
+                <img src="/assets/camera.svg" />
+            </a>
+        </div>
+    </header>
+
+    @RenderBody()
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
